@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="411dp"
+        android:layout_height="103dp"
+        android:background="@color/azulclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:text="Férias"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="401dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/backgroud_camplogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Solicite suas próximas férias"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSolicitar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud_button"
+            android:gravity="center"
+            android:text="Solicitar Férias"
+            android:textColor="#EAE1E1"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/txtFeriasVencidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Férias vencidas"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/txtMesesTrabalhados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Meses trabalhados"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/txtInicioFerias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Início das férias"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/txtFinalFerias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Final das férias"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/txtDescontosFerias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Descontos das férias"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/txtDiasFerias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dias de férias"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/txtValorReceber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Valor a receber"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/txtDiasVencidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dias vencidos"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="250dp"/>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_background"
+            app:menu="@menu/botton_nav_menu"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
