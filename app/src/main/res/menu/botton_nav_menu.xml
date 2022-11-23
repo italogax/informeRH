@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Incial"
+        android:icon="@drawable/ic_baseline_casa"
+        android:id="@+id/Incial"/>
+    <item android:title="Pagamento"
+        android:icon="@drawable/ic_baseline_pagamento"
+        android:id="@+id/pagamento"/>
+    <item android:title="Ponto"
+        android:icon="@drawable/ic_baseline_ponto"
+        android:id="@+id/ponto"/>
+    <item android:title="Mais"
+        android:icon="@drawable/ic_baseline_mais"
+        android:id="@+id/mais"/>
+</menu>

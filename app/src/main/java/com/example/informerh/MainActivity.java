@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
                 // Mensagem indicando o sucesso da autenticação. SUBUSTITUIR a mensagem com o código para passar para a próxima tela
-                Toast.makeText(MainActivity.this, "Autenticado com sucesso", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, IncialActivity.class);
+                startActivity(intent);
             }
             // Falha na autenticação
             @Override
